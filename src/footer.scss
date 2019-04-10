@@ -1,0 +1,20 @@
+footer {
+
+  background-color: $background1;
+  margin-top: 50px;
+  margin-bottom: 30px;
+
+  @include my-flex-around;
+
+  ul {
+
+    list-style: none;
+  }
+
+  p {
+
+    font-size: $fontSize4;
+    font-weight: bold;
+    width: 20%;
+  }
+}
