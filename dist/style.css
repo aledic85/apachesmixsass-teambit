@@ -192,3 +192,45 @@ footer img {
   width: 5%;
 }
 
+@media all and (max-width: 768px) {
+  h1,
+  h2,
+  h3 {
+    font-size: 20px !important;
+  }
+
+  p {
+    font-size: 10px !important;
+  }
+
+  .nav-right {
+    display: none !important;
+  }
+
+  .margin-cont img {
+    max-width: 200px !important;
+    margin-top: 0 !important;
+  }
+
+  .margin-cont h1 {
+    max-width: 100% !important;
+  }
+
+  .text-container {
+    width: 100% !important;
+  }
+
+  .single-img-cont img {
+    max-width: 70% !important;
+  }
+
+  footer img,
+  footer p {
+    display: none !important;
+  }
+
+  footer .list-container {
+    display: block !important;
+  }
+}
+
