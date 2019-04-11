@@ -6,15 +6,32 @@ footer {
 
   @include my-flex-around;
 
-  ul {
+  .list-container {
 
-    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+
+    ul {
+
+      list-style: none;
+      padding: 20px;
+
+      h4, li {
+
+        margin-bottom: 10px;
+      }
+    }
   }
 
   p {
 
     font-size: $fontSize4;
     font-weight: bold;
-    width: 20%;
+    width: 23%;
+  }
+
+  img {
+
+    width: 5%;
   }
 }

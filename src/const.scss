@@ -9,11 +9,21 @@ $fontSize3: 22px;
 $fontSize4: 18px;
 $fontSize5: 14px;
 
+* {
+
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto';
+  color: $mainColor;
+}
+
 @mixin my-flex-between {
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 @mixin my-flex-around {
@@ -28,6 +38,7 @@ $fontSize5: 14px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 @mixin marginAuto {

@@ -9,9 +9,11 @@
   .wrapper-white {
 
     background-color: $background1;
+    margin-top: 40px;
 
     .margin-cont {
 
+      padding-bottom: 30px;
       @include my-flex-between;
       @include marginAuto;
 
@@ -31,6 +33,17 @@
           margin-top: 30px;
           line-height: 1.5;
         }
+
+        h3 {
+
+          font-size: $fontSize2;
+        }
+
+        img {
+
+          max-width: 50%;
+          margin-top: 30px;
+        }
       }
 
       img {
@@ -44,6 +57,8 @@
 
     background-color: $background2;
     width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
     .margin-cont {
 
@@ -82,10 +97,30 @@
         }
       }
 
-      img.bunny {
+      img {
 
         max-width: 30%;
         margin-top: 40px;
+      }
+
+      h1 {
+
+        font-size: $fontSize1;
+        max-width: 50%;
+        margin-bottom: 20px;
+      }
+
+      .blockquote {
+
+        border-radius: 5px;
+        background-color: $background1;
+        width: 50%;
+        padding: 20px;
+
+        p {
+
+          line-height: 2;
+        }
       }
     }
   }
