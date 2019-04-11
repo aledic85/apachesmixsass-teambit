@@ -29,3 +29,9 @@ $fontSize5: 14px;
   flex-direction: column;
   align-items: center;
 }
+
+@mixin marginAuto {
+
+  width: 80%;
+  margin: auto;
+}

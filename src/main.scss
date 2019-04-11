@@ -13,9 +13,7 @@
     .margin-cont {
 
       @include my-flex-between;
-
-      width: 80%;
-      margin: auto;
+      @include marginAuto;
 
       .text-container {
 
@@ -50,9 +48,7 @@
     .margin-cont {
 
       @include my-flex-column;
-
-      width: 80%;
-      margin: auto;
+      @include marginAuto;
 
       h2 {
 
@@ -67,22 +63,29 @@
 
         margin-top: 40px;
 
-        img {
+        .single-img-cont {
 
-          max-width: 15%;
+          @include my-flex-column;
+
+          img {
+
+            max-width: 30%;
+          }
+
+          p {
+
+            font-size: $fontSize4;
+            max-width: 50%;
+            margin-top: 20px;
+            text-align: center;
+          }
         }
       }
 
-      img {
+      img.bunny {
 
-        max-width: 20%;
+        max-width: 30%;
         margin-top: 40px;
-      }
-
-      p {
-
-        font-size: $fontSize2;
-        font-weight: bold;
       }
     }
   }
