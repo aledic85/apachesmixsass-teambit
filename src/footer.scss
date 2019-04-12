@@ -11,6 +11,11 @@ footer {
     display: flex;
     flex-wrap: wrap;
 
+    @media all and(max-width: $phone) {
+
+      display: block;
+    }
+
     ul {
 
       list-style: none;
@@ -28,10 +33,20 @@ footer {
     font-size: $fontSize4;
     font-weight: bold;
     width: 23%;
+
+    @media all and(max-width: $phone) {
+
+      display: none;
+    }
   }
 
   img {
 
     width: 5%;
+
+    @media all and(max-width: $phone) {
+
+      display: none;
+    }
   }
 }

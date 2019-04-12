@@ -16,6 +16,11 @@
 
     @include my-flex-between;
     width: 40%;
+
+    @media all and(max-width: $phone) {
+
+      display: none;
+    }
   }
 
   img {
